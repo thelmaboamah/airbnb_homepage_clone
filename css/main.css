@@ -1,0 +1,647 @@
+/********** General Styles *******/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	background-color: #EDEFED;
+	text-align: center;
+}
+
+section {
+	position: relative;
+}
+
+h1 {
+	font-size: 34px;
+	font-weight: 700;
+	padding: 0;
+	margin: 0;
+	margin-top: 30px;	
+}
+
+h2 {
+	font-size: 30px;
+	margin: 0;
+}
+
+h3 {
+	margin: 0;
+}
+
+p {
+	font-size: 18px;
+}
+
+p {
+	margin-top: 5px;
+	margin-bottom: 25px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.section-content {
+	position: absolute;
+	text-align: center;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/********** Mobile Header *********/
+
+#mobile-header {
+	background: #fff;
+	padding: 5px;
+}
+
+#logo {
+	width: 102px;
+	height: 32px;
+	display: block;
+	margin: 0 auto;
+}
+
+#hamburger {
+	width: 18px;
+	height: 15px;
+	margin-top: 10px;
+	margin-left: 5px;
+	float: left;
+}
+
+/******** Modal Navigation ********/
+.nav-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .7);
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	display: none;
+	z-index: 100;
+}
+
+.nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: left;
+	background-image: url(../Assets/Brand/wallpaper.png);
+	height: 100%;
+	width: 285px;
+	padding-top: 30px;
+}
+
+
+.nav li {
+	list-style: none;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.nav li:hover {
+	color: #FF5F64;
+}
+
+/************Welcome section *******/
+
+#vid-carousel {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	z-index: -10;
+	overflow: hidden;
+}
+
+#vid-carousel video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	z-index: -8;
+}
+
+/******* Mobile Welcome Search Bar ***/
+
+#search-bar {
+	background-color: #fff;
+	color: #565A5C;
+	display: inline-block;
+	height: 42px;
+	width: 95%;
+	position: relative;
+}
+
+#search-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+
+}
+
+#search-bar img {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/******** Gray dividing sections ******/
+.gray-section {
+	height: 150px;
+}
+
+.gray-section h2 {
+	color: #565A5C;
+	padding-bottom: 5px;
+}
+
+.gray-section p {
+	color: #565A5C;
+	margin: 0;
+}
+
+/*********** City Styles *********/
+.city {
+	background-size: cover;
+	height: 344px;
+	position: relative;
+}
+
+.city h2,
+.city div {
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.city img {
+	width: 56px;
+}
+
+#philly {
+	background-image: url(../Assets/pics/philly.jpg);
+}
+
+#easthampton {
+	background-image: url(../Assets/pics/easthampton.jpg);
+}
+
+#boston {
+	background-image: url(../Assets/pics/boston.jpg);
+}
+
+#paris {
+	background-image: url(../Assets/pics/paris.jpg);
+}
+
+#miami {
+	background-image: url(../Assets/pics/miami.jpg);
+}
+
+#berlin {
+	background-image: url(../Assets/pics/berlin.jpg);
+}
+
+#portland {
+	background-image: url(../Assets/pics/portland.jpg);
+	margin-bottom: 30px;
+}
+
+#la {
+	background-image: url(../Assets/pics/losangeles.jpg);
+}
+
+#venice {
+	background-image: url(../Assets/pics/venice.png);
+}
+
+#newyork {
+	background-image: url(../Assets/pics/newyork.jpg);
+}
+
+#sanfran {
+	background-image: url(../Assets/pics/sanfran.jpg);
+}
+
+#hongkong { 
+	background-image: url(../Assets/pics/hongkong.jpg);
+ }
+
+#chicago {
+	background-image: url(../Assets/pics/chicago.jpg);
+}
+
+.city span {
+	background-color: rgba(86, 90, 92, .7);
+	padding: 5px;
+	position: absolute;
+	top: 70%;
+	left: 0;
+	font-size: 24px;
+}
+
+/********* Footer ***********/
+footer {
+	background-image: url(../Assets/Brand/wallpaper.png);
+	height: 352px;
+	position: relative;
+	padding-top: 1em;
+}
+
+ul{
+	display: inline-block;
+}
+
+.footer-icons li,
+.footer-nav li {
+	display: inline-block;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.footer-icons img {
+	width: 36px;
+}
+
+#copyright {
+	color: #808080;
+	font-size: 14px;
+}
+
+select {
+	background-color: #565a5c;
+	border: 0;
+	color: #fff;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	display: block;
+	width: 80%;
+	height: 40px;
+}
+
+}
+
+
+/**********  Elements Hidden in Mobile ***********/
+
+/* Large yellow image*/
+#create, 
+{
+	display: none;
+}
+
+#main-header {
+	display: none;
+}
+
+#community-section,
+#community-container {
+	display: none;
+}
+
+/* See all destinations button */
+
+#see {
+	display: none;
+}
+
+/* Additional cities */
+.hidden {
+	display:none;
+}
+
+#works /***How it works button **/
+{
+	display: none;
+}
+
+#search-form {
+	display: none;
+}
+
+
+
+/********* Media Queries ************/
+
+@media(min-width: 768px) {
+
+/************ Tablet Style *********/
+
+	/********* General Styles ******/
+	h1 {
+		font-size: 60px;
+	}
+	/******* Header ***********/
+
+	#main-header {
+		display: block;
+		position: absolute;
+		background-color: transparent;
+		width: 100%;
+	}
+
+	#main-header nav,
+	#main-header li {
+		display: inline-block;
+	}
+
+	#main-header nav {
+		float: right;
+		margin: 10px;
+	}
+
+	#main-header ul {
+		margin: 0;
+	}
+
+	#logo-white {
+		width: 98px;
+		float: left;
+		margin: 10px;
+	}
+
+	#buoy {
+		width: 26px;
+	}
+
+	#buoy-li {
+	position: relative;
+    top: 8px;
+    right: -9px;
+	}
+
+	#main-header li {
+		font-size: 14px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	#main-header button {
+		background-color: transparent;
+		border: 2px solid #fff;
+		color: #fff;
+		padding: 5px 10px;
+	}
+
+	/******** Welcome Section *****/
+	#vid-carousel {
+		height: 600px;
+	}
+
+	#vid-carousel video {
+		height: 600px;
+	}
+
+	#works {
+		display: block;
+		margin: 0 auto;
+		background-color: rgba(255, 255, 255, .6);
+		color: white;
+		padding: 12px 25px;
+		border-radius: 2px;
+		border-style: none;
+	}
+	
+
+	#search-form {
+		display: block;
+		width: 100%;
+		height: 100px;
+		position: absolute;
+		bottom: 0;
+		background: rgba(0, 0, 0, .4);
+	}
+	
+	#search-form form{
+		font-size: 0;
+		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+  		width: 100%;
+	}
+
+	#search-form form > * {
+		display: inline-block;
+		height: 44px;
+		font-size: 16px;
+		border-style: none;
+		padding: 5px;
+	}
+	
+	#search-form form input:first-of-type {
+		width: 270px;
+		border-bottom-left-radius: 2px;
+		border-top-left-radius: 2px;
+	}
+
+	#search-form form input:nth-of-type(2),
+	#search-form form input:nth-of-type(3),
+	#search-form form input:nth-of-type(4) {
+		width: 123px;
+	}
+
+	#search-form button {
+		width: 107px;
+		background-color: #FF5F64;
+		color: #fff;
+	}
+
+	/* Cities + Flexbox Styles */
+	.hidden {
+		display: block;
+	}
+
+	.city-container {
+		display: flex;
+		flex-wrap: wrap;
+		height: 738px;
+		width: 695px;
+		margin: 0 auto;
+	}
+	
+	#philly, 
+	#paris, 
+	#sanfran {
+		width: 695px;
+	}
+
+	#easthampton, 
+	#boston, 
+	#berlin,
+	#miami,
+	#la,
+	#venice,
+	#portland,
+	#newyork,
+	#hongkong,
+	#chicago {
+		width:335px;
+	}
+
+	#boston,
+	#miami,
+	#venice,
+	#newyork,
+	#chicago {
+		margin-left: 25px;
+	}
+
+	#portland {
+		margin-bottom: 0;
+	}
+
+	.city-container2 {
+		display: flex;
+		flex-wrap: wrap;
+		width: 695px;
+		height: 2189px;
+		margin: 0 auto;
+	}
+	
+
+	#community-container {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 1082px;
+		height: 1040px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		justify-content: space-between;
+	}
+
+	#bike {
+		background-image: url(../Assets/Brand/bike.png);
+	}
+	#alice {
+		background-image: url(../Assets/Brand/alice.png);
+	}
+	#share {
+		background-image: url(../Assets/Brand/share.png);
+	}
+	#nina {
+		background-image: url(../Assets/Brand/nina.png);
+	}
+
+	#community-container div {
+		display: block;
+		height: 492px;
+		width: 360px;
+		flex-grow: 1;
+		background-size: cover;
+		margin: 12px;
+	}
+
+	/*** See all destinations button **/
+	#see {
+		display: block;
+		height: 42px;
+		width: 695px;
+		margin: 0 auto;
+		background-color: #fff;
+		color: #565A5C;
+		font-weight: 700;
+		border: 1px solid #BDBCBC;
+		border-radius: 2px;
+		margin-top: 25px;
+	}
+
+	/***** Large Yellow image ***/
+	#create {
+		display: block;
+		position: relative;
+		height: 650px;
+		background-image: url(../Assets/Brand/create.jpg);
+		background-size: cover;
+		margin-top: 50px;
+	}
+	
+	/***** Community Section ****/
+	#community-section {
+		display: block;
+	}
+
+	/****** Hidden Styles ********/
+	#mobile-header {
+		display: none;
+	}
+
+	#search-bar {
+		display: none;
+	}
+}
+
+@media (min-width: 1083px) {
+	.city-container {
+		display: flex;
+		flex-wrap: wrap;
+		height: 344px;
+		width: 992px;
+		margin: 0 auto;
+		justify-content: space-between;
+	}
+
+	#philly,
+	#easthampton,
+	#boston,
+	#berlin,
+	#miami,
+	#la,
+	#venice,
+	#portland,
+	#sanfran,
+	#hongkong,
+	#chicago {
+		width: 314px;
+		margin: 0;
+	}
+
+	#paris,
+	#newyork {
+		margin: 0;
+		width: 655px;
+	}
+
+	.city-container2 {
+		display: flex;
+		flex-wrap: wrap;
+		width: 992px;
+		height: 1476px;
+		margin: 0 auto;
+		justify-content: space-between;
+	
+	}
+
+	#see {
+		width: 314px;
+	}
+
+	#community-container {
+		max-width: 100vw;
+		height: 492px;
+	}
+
+	#community-container div {
+		display: block;
+		height: 492px;
+		width: 260px;
+	}
+}
